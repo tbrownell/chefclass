@@ -2,6 +2,8 @@ default["apache"]["sites"]["terry-brownell2"] = { "site_title" => "terry-brownel
 default["apache"]["sites"]["terry-brownell2b"] = { "site_title" => "terry-brownell2b website coming soon!", "port" => 80, "domain" => "terry-brownell2b.mylabserver.com" }
 default["apache"]["sites"]["terry-brownell3"] = { "site_title" => "terry-brownell3.mylabserver.com", "port" => 80, "domain" => "terry-brownell3.mylabserver.com" }
 
+default["author"]["name"] = "Terry Brownell"
+
 case node["platform"]
 	when "centos"
 		default["apache"]["package"] = "httpd"
